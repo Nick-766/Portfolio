@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="mediaQuerie.css">
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div class="logo">Portfolio</div>
+        <div class="nav">
+            <ul class="nav-links">
+                <a href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="#Skill">Skill</a>
+                <a href="#Projects">Projects</a>
+                <a href="#Contact">Contact</a>
+            </ul>
+        </div>
+
+    </nav>
+    <!--section for Home page-->
+    <section id="Home">
+        <div class="profile">
+            <img src="./assests/N.jpg" alt="Nishant Kumar profile picture">
+        </div>
+        <div class="text">
+            <p class="text-p1">Hello I'm</p>
+            <h1 class="title">Nishant Kumar</h1>
+            <p class="text-p2">Frontend Developer</p>
+            <div class="button">
+                <button class="btn btn-2" onclick="window.open('./assests/Nishant kumar-Resume.pdf')">Download Resume</button>
+                <button class="btn btn-1" onclick="location.href='#Contact'">Contact Info</button>
+            </div>
+            <div id="social-container">
+                <img src="./assests/linkedin-original.256x256.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/nishant-kumar-6a679a207/'" />
+                <img src="./assests/Github_logo_PNG1.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://github.com/Nick-766'" />
+            </div>
+        </div>
+    </section>
+
+    <!--section for About page-->
+    <section id="About">
+        <p class="text-p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="profile">
+                <img src="./assests/N3.jpg" alt="Profile picture" class="about-pic">
+            </div>
+
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./assests/edu-logo.avif" alt="Education icon" class="icon">
+                        <h1>Education</h1>
+                        <p>BTech Bachelors Degree</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p> Hello! I am Nishant Kumar, a Computer science student with a passion for critical thinking/problem-solving and sharing a love for technology and science. A designer and developer with experience creating custom websites through HTML
+                        ,CSS, JAVASCRIPT,NODEJS, EXPRESS JS, MONGO DB.
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- this is for arrow-->
+        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#Skill'" />
+
+    </section>
+
+    <!-- section for Skills-->
+    <section id="Skill">
+        <p class="text-p1">Explore My</p>
+        <h1 class="title">SKILLS</h1>
+
+        <div class="skill-container">
+            <div class="container-1">
+                <ul class="skill-ul">
+                    <li class="skill-li"><img src="./assests/verify.png" alt="checkmark" class="icon-1">JAVA</li>
+                    <li class="skill-li"><img src="./assests/verify.png" alt="checkmark" class="icon-1">MySQL</li>
+                    <li class="skill-li"><img src="./assests/verify.png" alt="checkmark" class="icon-1">Basic PYTHON</li>
+                    <li class="skill-li"><img src="./assests/verify.png" alt="checkmark" class="icon-1">Data Structure and Algorithm</li>
+                    <li class="skill-li"><img src="./assests/verify.png" alt="checkmark" class="icon-1">Problem Solving</li>
+                </ul>
+            </div>
+            <div class="container-1">
+                <ul class="skill-ul">
+                    <li class="skill-li"><img src="./assests/verify.png" alt="checkmark" class="icon-1">HTML</li>
+                    <li class="skill-li"><img src="./assests/verify.png" alt="checkmark" class="icon-1">CSS</li>
+                    <li class="skill-li"><img src="./assests/verify.png" alt="checkmark" class="icon-1">JavaScript</li>
+                    <li class="skill-li"><img src="./assests/verify.png" alt="checkmark" class="icon-1">NodeJs</li>
+                    <li class="skill-li"><img src="./assests/verify.png" alt="checkmark" class="icon-1">ExpressJs</li>
+                    <li class="skill-li"><img src="./assests/verify.png" alt="checkmark" class="icon-1">MongoDB</li>
+                </ul>
+            </div>
+        </div>
+
+        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#Projects'" />
+    </section>
+
+    <!-- section for Projects-->
+    <section id="Projects">
+        <p class="text-p1">Browse My</p>
+        <h1 class="title">PROJECTS</h1>
+
+        <div class="project-container">
+
+            <div class="project">
+                <img src="./assests/pg.png" alt="PG Image" class="image">
+                <h2 class="pro-head">PG LIFE</h2>
+                <div class="button">
+                    <button class="btn btn-2 project-btn" onclick="location.href='https://github.com/Nick-766'">Github</button>
+                    <button class="btn btn-2 project-btn" onclick="location.href='https://github.com/Nick-766'">Live Demo</button>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="./assests/blog.jpg" alt="Blog Image" class="image">
+                <h2 class="pro-head">BLOG SITE</h2>
+                <div class="button">
+                    <button class="btn btn-2 project-btn" onclick="location.href='https://github.com/Nick-766'">Github</button>
+                    <button class="btn btn-2 project-btn" onclick="location.href='https://github.com/Nick-766'">Live Demo</button>
+                </div>
+
+            </div>
+
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#Contact'" />
+    </section>
+
+    <!-- section for Contact-->
+    <section id="Contact">
+        <p class="text-p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assests/Email.png" alt="Email icon" class="icon contact-icon">
+                <p><a href="mailto:example@gmail.com">nishantkumar885500@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assests/linkedin-original.256x256.png" alt="LinkedIN icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/nishant-kumar-6a679a207/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <a href="#Home">Home</a>
+                    <a href="#About">About</a>
+                    <a href="#Skill">Skill</a>
+                    <a href="#Projects">Projects</a>
+                    <a href="#Contact">Contact</a>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Nishant Kumar. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

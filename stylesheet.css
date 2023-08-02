@@ -1,0 +1,376 @@
+   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       font-family: "Poppins", sans-serif;
+   }
+   
+   html {
+       scroll-behavior: smooth;
+   }
+   
+   body {
+       background-color: rgb(154, 207, 208);
+   }
+   /*
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: rgb(19, 19, 20);
+    text-decoration: none;
+    font-weight: 500;
+}*/
+   
+   p {
+       color: rgb(85, 85, 85);
+   }
+   /*Transition*/
+   
+   a,
+   .btn {
+       transition: all 300ms ease;
+   }
+   /* NAVBAR*/
+   
+   #navbar {
+       display: flex;
+       position: relative;
+       justify-content: space-around;
+       align-items: center;
+       height: 13vh;
+   }
+   
+   nav,
+   .nav-links {
+       display: flex;
+   }
+   
+   nav {
+       justify-content: space-around;
+       align-items: center;
+       height: 17vh;
+   }
+   
+   .nav-links {
+       gap: 2rem;
+       list-style: none;
+       font-size: 1.5rem;
+   }
+   
+   a {
+       color: black;
+       text-decoration: none;
+       padding: 15px;
+       margin-right: 40px;
+   }
+   
+   a:hover {
+       color: grey;
+       text-decoration: underline;
+       text-underline-offset: 1rem;
+       /*  text-underline-offset => it is used for space btw text and underline*/
+   }
+   
+   .logo {
+       font-size: 2rem;
+       margin-left: 40px;
+   }
+   
+   .logo:hover {
+       cursor: default;
+   }
+   
+   section {
+       padding-top: 4vh;
+       height: 96vh;
+       margin: 0 10rem;
+       box-sizing: border-box;
+       min-height: fit-content;
+   }
+   /*section for home page*/
+   
+   #Home {
+       display: flex;
+       justify-content: center;
+       gap: 5rem;
+       height: 80vh;
+   }
+   
+   .profile {
+       display: flex;
+       height: 400px;
+       width: 400px;
+       margin: auto auto;
+       background-color: bisque;
+   }
+   
+   .text {
+       align-items: center;
+       text-align: center;
+       margin: auto 0;
+   }
+   
+   .text p {
+       font-weight: 600;
+   }
+   
+   .text-p1 {
+       text-align: center;
+       font-size: 1.35rem;
+   }
+   
+   .text-p2 {
+       font-size: 1.75rem;
+       margin-bottom: 1rem;
+   }
+   
+   .title {
+       font-size: 2.8rem;
+       text-align: center;
+   }
+   
+   #social-container {
+       display: flex;
+       justify-content: center;
+       margin-top: 1rem;
+       gap: 1rem;
+   }
+   /*icon*/
+   
+   .icon {
+       cursor: pointer;
+       height: 2rem;
+   }
+   /*button*/
+   
+   .button {
+       display: flex;
+       justify-content: center;
+       gap: 1rem;
+   }
+   
+   .btn {
+       transition: all 300ms ease;
+       font-weight: 600;
+       padding: 1rem;
+       width: 8rem;
+       border-radius: 2rem;
+   }
+   
+   .btn-1,
+   .btn-2 {
+       border: rgb(53, 53, 53) 0.1rem solid;
+   }
+   
+   .btn-1:hover,
+   .btn-2:hover {
+       cursor: pointer;
+   }
+   
+   .btn-1,
+   .btn-2:hover {
+       background: rgb(53, 53, 53);
+       color: white;
+   }
+   
+   .btn-1:hover {
+       background: rgb(0, 0, 0);
+   }
+   
+   .btn-2 {
+       background: none;
+   }
+   
+   .btn-2:hover {
+       border: rgb(255, 255, 255) 0.1rem solid;
+   }
+   
+   .button {
+       gap: 1rem;
+   }
+   /* About section */
+   
+   #About {
+       position: relative;
+       margin-top: 2rem;
+   }
+   
+   .about-container {
+       gap: 2rem;
+       margin-bottom: 2rem;
+       margin-top: 2rem;
+       width: 40vh;
+       height: 20vh;
+   }
+   
+   .about-details-container {
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+   }
+   
+   .about-container,
+   .about-details-container {
+       display: flex;
+   }
+   
+   .about-pic {
+       border-radius: 2rem;
+   }
+   
+   .details-container {
+       padding: 1.5rem;
+       flex: 1;
+       background: white;
+       border-radius: 2rem;
+       border: rgb(53, 53, 53) solid 2px;
+       border-color: rgb(163, 163, 163);
+       text-align: center;
+       width: 30vh;
+   }
+   
+   .section-container {
+       display: flex;
+       margin-top: 50px;
+       gap: 4rem;
+       height: 80%;
+   }
+   
+   .profile {
+       height: 400px;
+       width: 400px;
+       margin: auto 0;
+       margin-left: 10rem;
+   }
+   
+   .arrow {
+       position: absolute;
+       right: -5rem;
+       bottom: 2.5rem;
+   }
+   /*Skills section*/
+   
+   #Skill {
+       position: relative;
+       margin-top: 2rem;
+   }
+   
+   .skill-container {
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+       flex-direction: row;
+   }
+   
+   .container-1 {
+       border: 3px solid black;
+       margin: 5rem;
+       margin-top: 10rem;
+       padding: 25px;
+       width: 59vh;
+       height: 44vh;
+       border-radius: 15px;
+   }
+   
+   .skill-ul {
+       padding: 6px;
+       list-style: none;
+   }
+   
+   .skill-li {
+       padding: 7px;
+       font-size: 1.3rem;
+   }
+   
+   .icon-1 {
+       cursor: pointer;
+       height: 1.5rem;
+       padding-right: 15px;
+   }
+   /*Project section*/
+   
+   #Projects {
+       position: relative;
+       margin-top: 2rem;
+   }
+   
+   .project-container {
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+       flex-direction: row;
+   }
+   
+   .project {
+       border: 3px solid black;
+       border-radius: 10px;
+       width: 47vh;
+       height: 50vh;
+       margin-top: 7rem;
+       margin: 5rem;
+       border-radius: 2rem;
+   }
+   
+   .image {
+       height: 220px;
+       width: 340px;
+       padding: 12px;
+   }
+   
+   .pro-head {
+       display: flex;
+       justify-content: center;
+       margin: 12px;
+   }
+   
+   .project-btn {
+       color: black;
+       border-color: rgb(163, 163, 163);
+   }
+   /*Contact section*/
+   
+   #Contact {
+       display: flex;
+       justify-content: center;
+       height: 70vh;
+       flex-direction: column;
+   }
+   
+   .contact-info-upper-container {
+       display: flex;
+       justify-content: center;
+       border-radius: 2rem;
+       border: rgb(53, 53, 53) 0.1rem solid;
+       border-color: rgb(163, 163, 163);
+       background: (250, 250, 250);
+       margin: 2rem auto;
+       padding: 0.5rem;
+   }
+   
+   .contact-info-container {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 0.5rem;
+       margin: 1rem;
+   }
+   
+   .contact-info-container p {
+       font-size: larger;
+   }
+   
+   .contact-icon {
+       cursor: default;
+       height: 2.5rem;
+   }
+   /* FOOTER SECTION */
+   
+   footer {
+       height: 26vh;
+       margin: 0 1rem;
+   }
+   
+   footer p {
+       text-align: center;
+   }
